@@ -74,7 +74,7 @@ var app = {
                 overlap: false, // set to true, to allow banner overlap webview
                 offsetStatusBar: false, // set to true to avoid ios7 status bar overlap
                 autoShowBanner: false, // auto show banners ad when loaded
-                autoShowInterstitial: false // auto show interstitials ad when loaded
+                autoShowInterstitial: true // auto show interstitials ad when loaded
             });
 			
 		
