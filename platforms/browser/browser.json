@@ -76,13 +76,13 @@
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.cockroach"
         },
-        "cordova-plugin-vibration": {
-            "PACKAGE_NAME": "com.cockroach"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cockroach"
         },
         "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.cockroach"
         }
     },
@@ -650,6 +650,54 @@
             ]
         },
         {
+            "file": "plugins/cordova-plugin-media/www/MediaError.js",
+            "id": "cordova-plugin-media.MediaError",
+            "pluginId": "cordova-plugin-media",
+            "clobbers": [
+                "window.MediaError"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-media/www/Media.js",
+            "id": "cordova-plugin-media.Media",
+            "pluginId": "cordova-plugin-media",
+            "clobbers": [
+                "window.Media"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-media/www/browser/Media.js",
+            "id": "cordova-plugin-media.BrowserMedia",
+            "pluginId": "cordova-plugin-media",
+            "clobbers": [
+                "window.Media"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-media/www/MediaError.js",
+            "id": "cordova-plugin-media.MediaError",
+            "pluginId": "cordova-plugin-media",
+            "clobbers": [
+                "window.MediaError"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-media/www/Media.js",
+            "id": "cordova-plugin-media.Media",
+            "pluginId": "cordova-plugin-media",
+            "clobbers": [
+                "window.Media"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-media/www/browser/Media.js",
+            "id": "cordova-plugin-media.BrowserMedia",
+            "pluginId": "cordova-plugin-media",
+            "clobbers": [
+                "window.Media"
+            ]
+        },
+        {
             "file": "plugins/cordova-plugin-vibration/www/vibration.js",
             "id": "cordova-plugin-vibration.notification",
             "pluginId": "cordova-plugin-vibration",
@@ -665,54 +713,6 @@
             "merges": [
                 "navigator.notification",
                 "navigator"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-media/www/MediaError.js",
-            "id": "cordova-plugin-media.MediaError",
-            "pluginId": "cordova-plugin-media",
-            "clobbers": [
-                "window.MediaError"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-media/www/Media.js",
-            "id": "cordova-plugin-media.Media",
-            "pluginId": "cordova-plugin-media",
-            "clobbers": [
-                "window.Media"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-media/www/browser/Media.js",
-            "id": "cordova-plugin-media.BrowserMedia",
-            "pluginId": "cordova-plugin-media",
-            "clobbers": [
-                "window.Media"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-media/www/MediaError.js",
-            "id": "cordova-plugin-media.MediaError",
-            "pluginId": "cordova-plugin-media",
-            "clobbers": [
-                "window.MediaError"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-media/www/Media.js",
-            "id": "cordova-plugin-media.Media",
-            "pluginId": "cordova-plugin-media",
-            "clobbers": [
-                "window.Media"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-media/www/browser/Media.js",
-            "id": "cordova-plugin-media.BrowserMedia",
-            "pluginId": "cordova-plugin-media",
-            "clobbers": [
-                "window.Media"
             ]
         }
     ],
@@ -735,8 +735,8 @@
         "cordova-plugin-network-information": "1.2.1",
         "cordova-plugin-splashscreen": "3.2.2",
         "cordova-plugin-statusbar": "2.1.3",
-        "cordova-plugin-vibration": "2.1.2",
         "cordova-plugin-whitelist": "1.2.2",
-        "cordova-plugin-media": "2.2.0"
+        "cordova-plugin-media": "2.2.0",
+        "cordova-plugin-vibration": "2.1.2"
     }
 }
