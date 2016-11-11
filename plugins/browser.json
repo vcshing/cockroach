@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.cockroach"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.cockroach"
+        }
+    }
+}
