@@ -127,8 +127,8 @@ $(window).bind("click",function(){
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() -150;
-    var w = $(window).width() -200;
+    var h = $(window).height() -200;
+    var w = $(window).width() -280;
     
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
@@ -160,7 +160,7 @@ function calcSpeed(prev, next) {
     
     var greatest = x > y ? x : y;
     
-    var speedModifier = 0.2;
+    var speedModifier = 0.5;
 
     var speed = Math.ceil(greatest/speedModifier);
 
