@@ -76,9 +76,10 @@ background-size: 100%;
 	<img class ="left" src="img/c1.gif">
 </div>
     <script type="text/javascript">
-	
+	app.initialize();
 	
 $(document).ready(function(){
+
     animateDiv($(".a"));
 	navigator.notification.vibrateWithPattern([0, 100, 100, 200, 100, 400, 100, 800]);
 	if(Math.floor(Math.random() * 2) + 1 == 1 ){
