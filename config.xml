@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cockroach" version="1.0.5" android-versionCode="5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cockroach" version="1.0.6" android-versionCode="6">
   <name>1Cockroach Trick</name>
   <description>Cockroach game</description>
   <author href="http://phonegap.com" email="support@phonegap.com"></author>
