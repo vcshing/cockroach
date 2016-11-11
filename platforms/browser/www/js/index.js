@@ -68,7 +68,7 @@ var app = {
        			publisherId:          admobid.banner,  // Required
 				tappxIdAndroid:       "/120940746/Pub-13201-Android-6448",        // Optional
 				tappxShare:           0.2, 
-				isTesting: true, // receiving test ads (do not test with real ads as your account will be banned)				// Optional
+				isTesting: false, // receiving test ads (do not test with real ads as your account will be banned)				// Optional
                 interstitialAdId: admobid.interstitial,
                 bannerAtTop: false, // set to true, to put banner at top
                 overlap: false, // set to true, to allow banner overlap webview
