@@ -37,13 +37,9 @@
 		
 
 
-body {
-background: url("img/screen.png") top center no-repeat;;
-
- -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}		
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
 	</style>
 </head>
 
@@ -80,6 +76,8 @@ background: url("img/screen.png") top center no-repeat;;
 	">
 </div>
 -->
+
+<img src="img/screen.png" id="bg" alt="">
 <div class='a'>
 	<img class ="left" src="img/c1.gif">
 </div>
@@ -95,6 +93,27 @@ $(document).ready(function(){
 	if(Math.floor(Math.random() * 2) + 1 == 1 ){
 		window.admob.requestInterstitialAd();
 	}
+	
+		var theWindow        = $(window),
+	    $bg              = $("#bg"),
+	    aspectRatio      = $bg.width() / $bg.height();
+	    			    		
+	function resizeBg() {
+		
+		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+		    $bg
+		    	.removeClass()
+		    	.addClass('bgheight');
+		} else {
+		    $bg
+		    	.removeClass()
+		    	.addClass('bgwidth');
+		}
+					
+	}
+	                   			
+	theWindow.resize(resizeBg).trigger("resize");
+	
 });
 var init=1
 $(window).bind("click",function(){
