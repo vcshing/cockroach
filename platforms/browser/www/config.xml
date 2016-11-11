@@ -6,7 +6,7 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>!Cockroach</name>
+    <name>1Cockroach</name>
     <description>Cockroach game</description>
     <author email="support@phonegap.com" href="http://phonegap.com" />
     <content src="index.html" />
@@ -23,10 +23,4 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
-    <preference name="ShowSplashScreen" value="true" />
-    <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="10000" />
-    <preference name="AutoHideSplashScreen" value="false" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
-    <preference name="FadeSplashScreen" value="false" />
 </widget>

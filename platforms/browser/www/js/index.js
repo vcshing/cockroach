@@ -138,7 +138,7 @@ var app = {
 		// alert(5);
         document.removeEventListener('deviceready', app.onDeviceReady, false);
 		setTimeout(function() {navigator.splashscreen.hide();}, 5000);
-		navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
+		navigator.vibrate([1000, 1000, 3000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000]);
 		
         if (app.weinre.enabled) {
             console.log('Loading weinre...');
