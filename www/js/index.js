@@ -254,7 +254,8 @@ var app = {
 document.addEventListener("pause", onPause, false);
 
 function onPause() {
-    me.audio.stop("theme");
+   	navigator.vibrate(0);
+	clearInterval(myTimer);
 }
 
 function removeClass(elem, cls) {
