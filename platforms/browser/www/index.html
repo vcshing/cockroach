@@ -38,7 +38,7 @@
 
 
 body {
-background-image: url("img/screen.png");
+background: url("img/screen.png");
 background-repeat: no-repeat;
 background-size: 100%;
 }		
@@ -114,11 +114,11 @@ $(window).bind("click",function(){
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() ;
-    var w = $(window).width() ;
+    var h = $(window).height() -150;
+    var w = $(window).width() -200;
     
-    var nh = Math.floor(Math.random() * h-250);
-    var nw = Math.floor(Math.random() * w-250);
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
     
     return [nh,nw];    
     
