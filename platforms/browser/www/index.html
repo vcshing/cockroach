@@ -22,16 +22,16 @@
 
 	  .left {
 		position: absolute;
-		left: 0px;
-		top:0px;
+		left: -500px;
+		top:-500px;
 		bottom:100px;
 		margin: 5px;
 		width: 350px;
 	  }
 
 		div.a {
-			width: 50px;
-			height:50px;
+			width: 500px;
+			height:500px;
 			position:fixed;
 		}
 
@@ -90,48 +90,55 @@ background-size: 100%;
 </div>
 -->
 <div class='a'>
-	<img class ="left" src="img/c1.gif">
+	<img class ="left" src="img/c1.gif" >
 </div>
     <script type="text/javascript">
 	app.initialize();
 	
 $(document).ready(function(){
-
-    animateDiv($(".a"));
+	//$(".a").hide();
+	  
 	
-	
-	if(Math.floor(Math.random() * 3) + 1 == 1 ){
-		window.admob.requestInterstitialAd();
-	}
 });
 var init=1
+var start=1;
 $(window).bind("click",function(){
-
-	if(Math.floor(Math.random() * 4) + 1 == 1 ){
-		window.admob.requestInterstitialAd();
-    }
+	
+	
 	if(init==0){
 		//clearInterval(myTimer);
 		navigator.vibrate([]);
 		init=1;
+		
+		if(Math.floor(Math.random() * 2) + 1 == 1 ){
+			window.admob.requestInterstitialAd();
+		}
 	}else{
-
-	//	var myTimer = setInterval(function(){
-			navigator.vibrate([1000, 1000, 3000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000]);
-	//	}, 11000);
+		if(start==1){
+			setTimeout(function(){
+				$('.a').animate({ top: "-500PX", left: "-500PX" }, 1, function(){
+					animateDiv($(".a"));        
+				});
+				start=0;
+			},2000)
+		}else{
+			start==0;
+		}
+		navigator.vibrate([1000, 1000, 3000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000]);
+	
 		init=0;
 	}
 	
-	
+
 })
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() -200;
+    var h = $(window).height() -150;
     var w = $(window).width() -280;
     
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
+    var nh = Math.floor(Math.random() * h +500);
+    var nw = Math.floor(Math.random() * w +500);
     
     return [nh,nw];    
     
