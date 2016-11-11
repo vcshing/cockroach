@@ -9,8 +9,12 @@
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
 	<preference name="AutoHideSplashScreen" value="false" />
-	<preference name="SplashScreenDelay" value="0"/>
-	<preference name="FadeSplashScreen" value="false"/>
+	<preference name="SplashScreenDelay" value="10000"/>
+	<preference name="FadeSplashScreen" value="true" />
+<preference name="FadeSplashScreenDuration" value="1.5" />
+<preference name="ShowSplashScreenSpinner" value="false" />
+<preference name="SuppressesIncrementalRendering" value="true" />
+
   <plugin name="com.admob.google" spec="4.0.8" source="pgb" />
    <plugin name="cordova-plugin-fullscreen" source="npm" />
      <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
