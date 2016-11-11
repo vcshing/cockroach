@@ -96,8 +96,8 @@ $(document).ready(function(){
 var init=1
 $(window).bind("click",function(){
 	if(init==0){
-		navigator.vibrate(0);
 		clearInterval(myTimer);
+		navigator.vibrate([]);
 		init=1;
 	}else{
 
