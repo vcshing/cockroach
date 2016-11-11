@@ -31,7 +31,7 @@
 		top:0px;
 		bottom:100px;
 		margin: 5px;
-		width: 150px;
+		width: 250px;
 	  }
 
 		div.a {
@@ -81,17 +81,27 @@ background-size: 100%;
 $(document).ready(function(){
 
     animateDiv($(".a"));
-	navigator.notification.vibrateWithPattern([0, 100, 100, 200, 100, 400, 100, 800]);
+	
+	navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
+	
 	if(Math.floor(Math.random() * 2) + 1 == 1 ){
-		app.showInterstitial();
+		window.admob.requestInterstitialAd();
 	}
 });
-
+var init=1
 $(window).bind("click",function(){
+	if(init==0){
+		navigator.vibrate(0);
+		init=1;
+	}else{
+		setInterval(function(){
+			navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
+		}, 11000);
+	}
 	if(Math.floor(Math.random() * 2) + 1 == 1 ){
-		navigator.notification.vibrateWithPattern([0, 100, 100, 200, 100, 400, 100, 800]);
-		app.showInterstitial();
+		window.admob.requestInterstitialAd();
     }
+	init=0;
 })
 function makeNewPosition(){
     
@@ -99,8 +109,8 @@ function makeNewPosition(){
     var h = $(window).height() ;
     var w = $(window).width() ;
     
-    var nh = Math.floor(Math.random() * h+150);
-    var nw = Math.floor(Math.random() * w+150);
+    var nh = Math.floor(Math.random() * h-150);
+    var nw = Math.floor(Math.random() * w-150);
     
     return [nh,nw];    
     

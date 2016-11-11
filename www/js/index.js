@@ -85,8 +85,8 @@ var app = {
         }
 		
 
-			app.startBannerAds();
-			app.requestInterstitial(false);
+			//app.startBannerAds();
+			//app.requestInterstitial(false);
 			
     },
     // Bind Event Listeners
