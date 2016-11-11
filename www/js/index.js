@@ -254,7 +254,7 @@ var app = {
 document.addEventListener("pause", onPause, false);
 
 function onPause() {
-	clearInterval(myTimer);
+	//clearInterval(myTimer);
    	navigator.vibrate(0);
 	
 }
