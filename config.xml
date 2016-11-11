@@ -10,7 +10,7 @@
   <preference name="fullscreen" value="true" />
   <preference name="ShowSplashScreen" value="true" />
   <preference name="SplashScreen" value="screen"/>  /*my original file name is screen.png */
-  <preference name="SplashScreenDelay" value="10000"/>
+  <preference name="SplashScreenDelay" value="0"/>
   <preference name="AutoHideSplashScreen" value="false" />
   <preference name="SplashShowOnlyFirstTime" value="false" />
   <preference name="FadeSplashScreen" value="false"/>
