@@ -100,38 +100,31 @@ $(document).ready(function(){
 	  
 	
 });
-var init=1
-var start=1;
-$(window).bind("click",function(){
-	
-	
-	if(init==0){
-		//clearInterval(myTimer);
-		navigator.vibrate([]);
-		init=1;
-		
-		if(Math.floor(Math.random() * 2) + 1 == 1 ){
+showtimeout =0;
+$(window).bind("touchstart click",function(){
+	if(showtimeout==0){
+		$(".a").show();
+		navigator.vibrate([1000, 1000, 3000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000]);
+		$('.a').animate({ top: "-500PX", left: "-500PX" }, 1, function(){
+			showtimeout=1;
+			animateDiv($(".a"));    
+			sleep(3000).then(() => {
+				//$(".a").hide();
+			   showtimeout=0;
+			   $(".a").hide();
+			});				
+		});
+	}else{
+		if(Math.floor(Math.random() * 10) + 1 == 1 ){
 			window.admob.requestInterstitialAd();
 		}
-	}else{
-		if(start==1){
-			setTimeout(function(){
-				$('.a').animate({ top: "-500PX", left: "-500PX" }, 1, function(){
-					animateDiv($(".a"));        
-				});
-				start=0;
-			},4000)
-		}else{
-			start==0;
-			navigator.vibrate([1000, 1000, 3000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000, 1000, 5000]);
-		}
-		
-	
-		init=0;
 	}
-	
-
 })
+
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
@@ -158,7 +151,7 @@ function animateDiv($target){
     $('.a').animate({ top: newq[0], left: newq[1] }, speed, function(){
 		setTimeout(function(){
 			  animateDiv($target);      
-		},1000)	  
+		},500)	  
     });
     
 };
@@ -170,7 +163,7 @@ function calcSpeed(prev, next) {
     
     var greatest = x > y ? x : y;
     
-    var speedModifier = 0.5;
+    var speedModifier = 5;
 
     var speed = Math.ceil(greatest/speedModifier);
 

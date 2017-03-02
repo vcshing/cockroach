@@ -63,6 +63,9 @@
         },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.cockroach"
+        },
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "com.cockroach"
         }
     },
     "dependent_plugins": {
